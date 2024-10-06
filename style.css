@@ -40,7 +40,8 @@ nav{
     width: 200px;
     border-radius: 50%;
     border: 8px solid wheat;
-    box-shadow: 10px;
+    /* box-shadow: 10px; */
+    box-shadow: 10px 10px 10px 10px lightblue;
 
 }
 #track{
@@ -63,17 +64,23 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-.controls div{
-    height: 60px;
-    width: 60px;
+.controls i{
+    height: 40px;
+    width: 40px;
     margin: 20px;
-    background-color: black;
-    display: inline-block;
+    background-color: white;
+    display: flex;
     justify-content: center;
+    box-shadow:  10px lightblue;
+
+
     align-items: center;
     cursor: pointer;
     border-radius: 50%;
-    color: aquamarine;
     /* box-shadow: 0 10px 20px ; */
+}
+.middle{
+    transform: scale(1.5);
+    box-shadow: 4px salmon;
 }
 
