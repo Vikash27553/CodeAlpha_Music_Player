@@ -15,22 +15,35 @@
                 <div class="circle">
                     <i class="fa-solid fa-angle-left icon" ></i>
                 </div>
+                <div> <i class="fa-solid fa-headphones head"></i></div>
+
+                <div class="title">Music Player </div>
+
                 <div class="circle">
                     <i class="fa-solid fa-bars icon"></i>
                  </div>
             </nav>  
-            <img src="image.jpg" alt="image" class="song-image">  
-            <h1>Vikash kaushik</h1>
-            <p> Arjeet singh</p>  
-            <audio controls>
-                <source src="song.mp3" type="audio/mp3">
-            </audio>
-            <input type="range" value="0" id="track">
+            <div class="music-details">
+                <div class="track-img">img</div>  
+                <div class="track-name" >Vikash kaushik</div>
+                 <div class="track-artist">Arjeet singh </div>
+            </div>
+            <!-- <audio  id="song">
+                <source src="music/song.mp3" type="audio/mp3">
+            </audio> -->
+            <div class="slider">
+            <div class="current-time">00:00</div>
+                  <input type="range" max="100" min="0" value="0" id="track" onclick="seekto()">
+                  <div class="total-duration">00:00</div>
+             </div>
+             <!-- <i class="fa-solid fa-volume-high" id="mute" onclick="soundMute()" ></i>
+            <input type="range" value="0" > -->
+
 
             <div class="controls">
-                <i class="fa-solid fa-backward"></i>
-                <i class="fa-solid fa-pause middle"></i>
-                <i class="fa-solid fa-forward"></i>
+               <div onclick="prevTrack()"><i class="fa-solid fa-backward"></i></div> 
+               <div  onclick="playPause()"><i class="fa-solid fa-pause middle" id="ctrlbtn"></i></div> 
+               <div onclick="nextTrack()"><i class="fa-solid fa-forward"></i></div> 
             </div>
         </div> 
         
@@ -41,6 +54,9 @@
 
 
       
- <link rel="javascript" href="script.js">   
+ 
+ <script src="script.js">
+   
+ </script>
 </body>
 </html>
