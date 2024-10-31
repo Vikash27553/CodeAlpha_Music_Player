@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    </head>
 <body>
     <div class="container">
     <!-- <h> Music Player </h> -->
@@ -13,24 +14,22 @@
         <div class="music-player">   
             <nav>
                 <div class="circle">
-                    <i class="fa-solid fa-angle-left icon" ></i>
+                <div onclick="backTo()"><i class="fa-solid fa-angle-left icon" ></i></div>
                 </div>
                 <div> <i class="fa-solid fa-headphones head"></i></div>
 
                 <div class="title">Music Player </div>
 
                 <div class="circle">
-                    <i class="fa-solid fa-bars icon"></i>
+                 <div onclick="showMusicList()">  <i class="fa-solid fa-bars icon"></i></div>
                  </div>
             </nav>  
             <div class="music-details">
-                <div class="track-img">img</div>  
-                <div class="track-name" >Vikash kaushik</div>
-                 <div class="track-artist">Arjeet singh </div>
+                <div class="track-img"></div>  
+                <div class="track-name" ></div>
+                 <div class="track-artist"> </div>
             </div>
-            <!-- <audio  id="song">
-                <source src="music/song.mp3" type="audio/mp3">
-            </audio> -->
+            
             <div class="slider">
             <div class="current-time">00:00</div>
                   <input type="range" max="100" min="0" value="0" id="track" onclick="seekto()">
@@ -46,6 +45,8 @@
                <div onclick="nextTrack()"><i class="fa-solid fa-forward"></i></div> 
             </div>
         </div> 
+
+    <div onclick="showMusicList()" id="music-list" class="music-list" style="display: none;"></div>
         
             
                 

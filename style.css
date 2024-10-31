@@ -1,6 +1,6 @@
-body{
-    background-color:;
-}
+ body{
+
+ }
 .symbol{
     font-size: 40px;
 }
@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    gap: 30px;
 }
 
 .music-player{
@@ -19,7 +20,7 @@ body{
     width:400px;
     height: 90vh;
     text-align: center;
-    background-color: #f5cd86;
+    background-color: gainsboro;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px  black;
@@ -35,6 +36,9 @@ body{
     margin-top: 25px;
 
     font-size: 40px;
+}
+.circle{
+    cursor: pointer;
 }
 .music-details{
     height: 400px;
@@ -146,3 +150,26 @@ nav{
     box-shadow: 4px salmon;
 }
 
+.music-list{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    height: 90vh;
+    /* border: 5px solid black; */
+    box-shadow: 0px 0px 5px 5px  black;
+
+
+}
+.music-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-list li{
+    margin: 5px 0;
+    font-size: 18px;
+}
